@@ -11,6 +11,8 @@ def get_symbol():
     internals = model_symbol.get_internals()
 
     # style and content layers
+    #style = mx.sym.Group([internals["relu_conv1_output"], internals['fire2_relu_expand1x1_output'], internals['fire2_relu_expand3x3_output'], internals['fire3_relu_squeeze1x1_output'], internals['fire3_relu_expand1x1_output'], internals['fire3_relu_expand3x3_output'], internals['fire4_relu_squeeze1x1_output'], internals['fire4_relu_expand1x1_output'], internals['fire4_relu_expand3x3_output'], internals['fire5_relu_squeeze1x1_output'], internals['fire5_relu_expand1x1_output'], internals['fire5_relu_expand3x3_output'], internals['fire6_relu_squeeze1x1_output'], internals['fire6_relu_expand1x1_output'], internals['fire6_relu_expand3x3_output'], internals['fire7_relu_squeeze1x1_output'], internals['fire7_relu_expand1x1_output'], internals['fire7_relu_expand3x3_output'], internals['fire8_relu_squeeze1x1_output'], internals['fire8_relu_expand1x1_output'], internals['fire8_relu_expand3x3_output'], internals['fire9_relu_squeeze1x1_output'], internals['fire9_relu_expand1x1_output'], internals['fire9_relu_expand3x3_output'], internals['relu_conv1_output']])
+    #content = mx.sym.Group([internals["fire2_relu_expand1x1_output"]])
     style = mx.sym.Group([internals["relu_conv1_output"], internals["fire2_relu_expand1x1_output"], internals["fire4_relu_squeeze1x1_output"], internals["fire6_relu_expand3x3_output"]])
     content = mx.sym.Group([internals["relu_conv1_output"]])
     return style, content
