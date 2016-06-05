@@ -17,7 +17,7 @@ parser.add_argument('--content-image', type=str, default='input/minsk.jpg',
                     help='the content image')
 parser.add_argument('--style-image', type=str, default='input/starry_night.jpg',
                     help='the style image')
-parser.add_argument('--stop-eps', type=float, default=.005,
+parser.add_argument('--stop-eps', type=float, default=.0005,
                     help='stop if the relative chanage is less than eps')
 parser.add_argument('--content-weight', type=float, default=10,
                     help='the weight for the content image')
