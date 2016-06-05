@@ -3,7 +3,7 @@ Lightweight version of mxnet neural art implementation using ~4.8M SqueezeNet mo
 
 ![input](input/minsk.jpg?raw=true "input")
 ![style](input/starry_night.jpg?raw=true "style")
-![output](output/tmp_125.jpg?raw=true "output")
+![output](output/tmp_950.jpg?raw=true "output")
 
 ![animated](output/animated.gif?raw=true "animated")
 
